@@ -1,11 +1,11 @@
 To begin using BlueDot, you will need to pair your Android device with your Raspberry Pi
 
-On your Android device:
+#### On your Android device:
 - Open `Settings`
 - Select `Bluetooth`, to make your device discoverable
   ![available devices](images/available_devices.png)
 
-On your Raspberry Pi:
+#### On your Raspberry Pi:
 - Click on the  Bluetooth icon in the task bar.
 - Turn on Bluetooth
 - Click on `Make Discoverable`
@@ -14,11 +14,11 @@ On your Raspberry Pi:
 - Your Android device should appear in the list. Select it and click `Pair`
   ![add device](images/add_device.png)
   
-You will then be prompted to accept or input a pin number. Once this has been completed, your devices should be paired.
+- You will then be prompted to accept or input a pin number. Once this has been completed, your devices should be paired.
 
-![confirm pair](images/confirm_pair.png)
-![pairing code](images/pairing_code.png)
-![pair success](images/pair_success.png)
+	![confirm pair](images/confirm_pair.png)
+	![pairing code](images/pairing_code.png)
+	![pair success](images/pair_success.png)
 
 ### Receiving signals with Python
 
