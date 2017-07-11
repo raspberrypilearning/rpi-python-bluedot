@@ -43,26 +43,22 @@ You can now use the BlueDot Python module to receive messages from the Android A
 
 ### More methods
 
-The following additional methods can be used, to receive more information about how the user is interacting with the blue dot.
+- The following additional methods can be used, to receive more information about how the user is interacting with the blue dot.
 
-```python
-bd.when_pressed = foo ##run the function foo when the blue dot is pressed
-bd.when_release = bar ##run the function bar when the blue dot is released
-bd.when_moved = baz ##run the function baz when your finger moves on the blue dot
-```
+	```python
+	bd.when_pressed = foo ##run the function foo when the blue dot is pressed
+	bd.when_release = bar ##run the function bar when the blue dot is released
+	bd.when_moved = baz ##run the function baz when your finger moves on the blue dot
+	```
 
-When the functions are called, the position of the user's finger on the blue dot will be passed into the function. An example `foo` function might look like this:
+- When the functions are called, the position of the user's finger on the blue dot will be passed into the function. An example `foo` function might look like this:
 
-```python
-def foo(pos):
-	print(pos.x)
-	print(pos.y)
-```
+	```python
+	def foo(pos):
+		print(pos.x)
+		print(pos.y)
+	```
 
-This will provide you with the `x` and `y` coordinates of the finger on the blue dot (from -1 to 1).
+- This will provide you with the `x` and `y` coordinates of the finger on the blue dot (from -1 to 1).
 
-Additionally, `pos.top` would return `True` if the finger press was near the top of the blue dot. Similarly, `pos.bottom`, `pos.right` and `pos.left` can be used.
-
-
-
-
+- Additionally, `pos.top` would return `True` if the finger press was near the top of the blue dot. Similarly, `pos.bottom`, `pos.right` and `pos.left` can be used.
