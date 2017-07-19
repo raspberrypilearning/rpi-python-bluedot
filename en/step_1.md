@@ -22,7 +22,7 @@ To begin using Blue Dot, you will need to pair your Android device with your Ras
 
 ### Receiving signals with Python
 
-You can now use the `BlueDot` Python module to receive messages from the Android app.
+You can now use the `bluedot` Python module to receive messages from the Android app.
 
 - On your Raspberry Pi, you can use Python3 IDLE or another IDE to write the following simple program.
 
