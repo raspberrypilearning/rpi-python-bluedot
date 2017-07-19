@@ -1,20 +1,20 @@
-To begin using BlueDot, you will need to pair your Android device with your Raspberry Pi
+To begin using Blue Dot, you will need to pair your Android device with your Raspberry Pi.
 
 #### On your Android device:
-- Open `Settings`
-- Select `Bluetooth`, to make your device discoverable
+- Open **Settings**.
+- Select **Bluetooth** and turn it on to make your device discoverable.
   ![available devices](images/available_devices.png)
 
 #### On your Raspberry Pi:
-- Click on the  Bluetooth icon in the task bar.
-- Turn on Bluetooth
-- Click on `Make Discoverable`
+- Click on the **Bluetooth** icon in the task bar.
+- Turn on Bluetooth.
+- Click on **Make Discoverable**.
   ![make discoverable](images/make_discoverable.png)
-- Click `Add Device`
-- Your Android device should appear in the list. Select it and click `Pair`
+- Click **Add Device**.
+- Your Android device should appear in the list. Select it and click **Pair**.
   ![add device](images/add_device.png)
   
-- You will then be prompted to accept or input a pin number. Once this has been completed, your devices should be paired.
+- You will then be prompted to accept, or to input a PIN (personal identification number). Once you've done this, your devices should be paired.
 
 	![confirm pair](images/confirm_pair.png)
 	![pairing code](images/pairing_code.png)
@@ -22,7 +22,7 @@ To begin using BlueDot, you will need to pair your Android device with your Rasp
 
 ### Receiving signals with Python
 
-You can now use the BlueDot Python module to receive messages from the Android App.
+You can now use the `BlueDot` Python module to receive messages from the Android app.
 
 - On your Raspberry Pi, you can use Python3 IDLE or another IDE to write the following simple program.
 
@@ -34,16 +34,16 @@ You can now use the BlueDot Python module to receive messages from the Android A
 	```
 
 - Save and run the code.
-- On your Android device, open the BlueDot app and select your Raspberry Pi from the list of available devices.
+- On your Android device, open the Blue Dot app and select your Raspberry Pi from the list of available devices.
 	![bd devices](images/bd_devices.png)
 	![bd_connected](images/bd_connected.png)
-- You should see a message in the Python shell, telling you that the device has connected.
+- In the Python shell, you should see a message telling you that the device has connected.
   ![connected](images/connected.png)
-- Push the blue dot on the android screen, and the message `You pressed the blue dot!` will appear in the shell.
+- Push the blue dot on the Android screen, and the message `You pressed the blue dot!` will appear in the shell.
 
 ### More methods
 
-- The following additional methods can be used, to receive more information about how the user is interacting with the blue dot.
+- The following additional methods can be used to receive more information about how you are interacting with the blue dot.
 
 	```python
 	bd.when_pressed = foo ##run the function foo when the blue dot is pressed
@@ -51,7 +51,7 @@ You can now use the BlueDot Python module to receive messages from the Android A
 	bd.when_moved = baz ##run the function baz when your finger moves on the blue dot
 	```
 
-- When the functions are called, the position of the user's finger on the blue dot will be passed into the function. An example `foo` function might look like this:
+- When the functions are called, the position of your finger on the blue dot will be passed into the function. An example `foo` function might look like this:
 
 	```python
 	def foo(pos):
