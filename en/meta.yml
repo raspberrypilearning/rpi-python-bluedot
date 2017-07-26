@@ -1,0 +1,14 @@
+title: Android-to-Raspberry Pi communication with Blue Dot
+hero_image: images/banner.png
+description: Send signals to your Raspberry Pi from an Android device
+original_url:
+theme: blue
+duration: 1 # 1, 2 or 3
+listed: false
+ingredient: true
+copyedit: false
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests:
+technologies: "python, android"
+steps:
+  - title: Using Blue Dot
