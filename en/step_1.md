@@ -24,7 +24,7 @@ To begin using Blue Dot, you will need to pair your Android device with your Ras
 
 You can now use the `bluedot` Python module to receive messages from the Android app.
 
-- On your Raspberry Pi, you can use Python3 IDLE or another IDE to write the following simple program.
+- On your Raspberry Pi, open **mu** from the **Programming** menu to write the following simple program.
 
 	```python
 	from bluedot import BlueDot
